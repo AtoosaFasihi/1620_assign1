@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.CSS">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+</head>
+
+<style>
+    p {
+        font-size: 5px;
+        border-bottom: 10px solid var(--yellow);
+    }
+</style>
+<body>
+    
+<div class="container"> 
+    <div class="item item1">take better notes</div>
+    <div class="item item2">My Notes</div>
+    <div class="item item3">
+        <div class="btns"> 
+            <button class="btn btn--subtle">New Note</button>
+            <button class="btn btn--subtle">Dark Theme</button>
+        </div>
+
+        <style>
+            .btns {
+                display: flex;
+                align-self: flex-start;
+            }
+        </style>
+
+
+
+    <div id="container1">
+        <textarea id="area" rows="20" cols="80"></textarea>
+    </div>
+
+    <style>
+        .container1 {
+            display: flex;
+            align-self: flex-start;
+            flex-grow: 4;
+            justify-content: start;
+        }
+
+    </style>
+
+    <div class="btns1"> 
+        <button class="btn btn--subtle">save</button>
+        <button class="btn btn--subtle">cancel</button>
+    </div>
+
+    <style>
+        .btns1 {
+            display: flex;
+            align-self: flex-start;
+            justify-content: center;
+        }
+    </style>
+
+
+    </div>
+    <div class="item item4">keep in touch 
+        <div class="btns2"> 
+            <button class="btn btn5--subtle"><img src="https://img.icons8.com/doodle/48/000000/instagram--v1.png"/></button>
+            <button class="btn btn6--subtle"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></button>
+        </div>
+        <style>
+            .btns2 {
+                display: flex;
+                justify-content: center;
+                align-content: stretch;
+            
+            }
+        </style>
+    </div>
+</div>
+
+
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 8px;
+   }
+
+   .item1 {
+       background: mistyrose;
+       grid-column: 1 / -1;
+   }
+
+   .item4 {
+       background: rgb(228, 146, 166);
+       grid-column: 1 / -1;
+   }
+
+   .item2 {
+       background: rgb(252, 190, 136);
+       grid-row: 2 /-1;
+       justify-content: start;
+       align-items: start;
+   }
+
+   .item3 {
+       background: rgb(130, 211, 184);
+       grid-column: 2 / -1;
+       grid-row: 2 / -1;
+       justify-content: start;
+       align-items: start;
+   }
+
+</style>
+
+</body>
+
+</html>
